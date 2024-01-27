@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"declaration": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"rootDirs": [
+			"src"
+		],
+		"lib": [
+			"es2022"
+		],
+		"target": "es2022",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"types": [
+			"node"
+		]
+	}
+}
