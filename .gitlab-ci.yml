@@ -1,5 +1,8 @@
 image: node:20
 
+default:
+  tags: [ 'whyhankee-2022' ]
+
 stages:
   - test
 
