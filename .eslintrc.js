@@ -26,13 +26,17 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'plugins': [
-		'@typescript-eslint'
+		'@typescript-eslint',
+		'simple-import-sort',
 	],
 	'rules': {
 		'indent': ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
 		'quotes': ['error', 'single'],
+		'object-curly-spacing': ['error', 'always'],
 		'semi': ['error', 'never'],
 		'require-await': 'error',
+		'simple-import-sort/imports': 'error',
+		'simple-import-sort/exports': 'error'
 	}
 }
