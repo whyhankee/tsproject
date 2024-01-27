@@ -32,11 +32,11 @@ module.exports = {
 	'rules': {
 		'indent': ['error', 'tab'],
 		'linebreak-style': ['error', 'unix'],
-		'quotes': ['error', 'single'],
 		'object-curly-spacing': ['error', 'always'],
-		'semi': ['error', 'never'],
+		'quotes': ['error', 'single'],
 		'require-await': 'error',
+		'semi': ['error', 'never'],
+		'simple-import-sort/exports': 'error',
 		'simple-import-sort/imports': 'error',
-		'simple-import-sort/exports': 'error'
 	}
 }
