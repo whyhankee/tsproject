@@ -1,5 +1,5 @@
 main()
 
-function main() {
+export function main() {
 	console.log('hello world')
 }
