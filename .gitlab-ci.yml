@@ -1,0 +1,11 @@
+image: node:20
+
+stages:
+  - test
+
+unittest:
+  stage: build
+  script:
+    - npm install -g pnpm
+    - pnpm install
+    - pnpm check
