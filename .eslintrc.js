@@ -21,6 +21,10 @@ module.exports = {
 		sourceType: "module",
 	},
 	plugins: ["@typescript-eslint", "simple-import-sort", "@stylistic"],
+	ignorePatterns: [
+		"coverage/**",
+		"dist/**"
+	],
 	rules: {
 		"@stylistic/semi": ["error", "always"],
 		"@stylistic/indent": ["error", "tab"],
