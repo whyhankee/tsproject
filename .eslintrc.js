@@ -1,42 +1,40 @@
 module.exports = {
-	'env': {
-		'browser': true,
-		'es2021': true
+	env: {
+		browser: true,
+		es2021: true,
 	},
-	'extends': [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended'
-	],
-	'overrides': [
+	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+	overrides: [
 		{
-			'env': {
-				'node': true
+			env: {
+				node: true,
 			},
-			'files': [
-				'.eslintrc.{js,cjs}'
-			],
-			'parserOptions': {
-				'sourceType': 'script'
-			}
-		}
+			files: [".eslintrc.{js,cjs}"],
+			parserOptions: {
+				sourceType: "script",
+			},
+		},
 	],
-	'parser': '@typescript-eslint/parser',
-	'parserOptions': {
-		'ecmaVersion': 'latest',
-		'sourceType': 'module'
+	parser: "@typescript-eslint/parser",
+	parserOptions: {
+		ecmaVersion: "latest",
+		sourceType: "module",
 	},
-	'plugins': [
-		'@typescript-eslint',
-		'simple-import-sort',
-	],
-	'rules': {
-		'indent': ['error', 'tab'],
-		'linebreak-style': ['error', 'unix'],
-		'object-curly-spacing': ['error', 'always'],
-		'quotes': ['error', 'single'],
-		'require-await': 'error',
-		'semi': ['error', 'never'],
-		'simple-import-sort/exports': 'error',
-		'simple-import-sort/imports': 'error',
-	}
-}
+	plugins: ["@typescript-eslint", "simple-import-sort", "@stylistic"],
+	rules: {
+		"@stylistic/semi": ["error", "always"],
+		"@stylistic/indent": ["error", "tab"],
+		"@stylistic/no-multiple-empty-lines": ["error", { max: 1, maxEOF: 0 }],
+		"@stylistic/no-trailing-spaces": ["error"],
+		"@stylistic/linebreak-style": ["error", "unix"],
+		"@stylistic/object-curly-spacing": ["error", "always"],
+		"@stylistic/quotes": [
+			"error",
+			"double",
+			{ avoidEscape: true, allowTemplateLiterals: false },
+		],
+		"require-await": "error",
+		"simple-import-sort/exports": "error",
+		"simple-import-sort/imports": "error",
+	},
+};

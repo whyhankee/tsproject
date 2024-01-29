@@ -7,12 +7,13 @@
 		"start": "node ./dist/index.js",
 		"dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --outfile=dist/index.js",
-		"lint": "eslint --fix",
+		"lint": "eslint --fix \"./**/*.{ts,js}\"",
 		"test": "vitest --coverage",
 		"test:ci": "pnpm run lint && pnpm run test --run"
 	},
 	"packageManager": "^pnpm@8.14.3",
 	"devDependencies": {
+		"@stylistic/eslint-plugin": "1.5.4",
 		"@types/node": "20.11.7",
 		"@typescript-eslint/eslint-plugin": "^6.19.1",
 		"@typescript-eslint/parser": "6.19.1",
