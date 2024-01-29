@@ -1,9 +1,9 @@
-import { describe, expect, test } from 'vitest'
+import { describe, expect, test } from "vitest";
 
-import { main } from './index'
-  
-describe('index', () => {
-	test('main should not crash', () => {
-		expect(() => main()).not.toThrow()
-	})
-})
+import { main } from "./index";
+
+describe("index", () => {
+	test("main should not crash", () => {
+		expect(() => main()).not.toThrow();
+	});
+});
