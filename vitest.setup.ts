@@ -1,5 +1,6 @@
-import { afterEach, vi } from "vitest";
+import { beforeEach, vi } from "vitest";
 
-afterEach(() => {
+beforeEach(() => {
+	console.log("!* beforeEach", beforeEach);
 	vi.restoreAllMocks();
 });
