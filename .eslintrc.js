@@ -37,6 +37,7 @@ module.exports = {
 			"double",
 			{ avoidEscape: true, allowTemplateLiterals: false },
 		],
+		"no-unused-vars": ["error"],
 		"no-console": [
 			"error", {
 				allow: ["info", "warn", "error"]
