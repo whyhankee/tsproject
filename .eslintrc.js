@@ -37,6 +37,11 @@ module.exports = {
 			"double",
 			{ avoidEscape: true, allowTemplateLiterals: false },
 		],
+		"no-console": [
+			"error", {
+				allow: ["info", "warn", "error"]
+			}
+		],
 		"require-await": "error",
 		"simple-import-sort/exports": "error",
 		"simple-import-sort/imports": "error",
