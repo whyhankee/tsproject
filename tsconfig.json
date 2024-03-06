@@ -11,7 +11,7 @@
 			"es2022"
 		],
 		"target": "es2022",
-		"module": "commonjs",
+		"module": "ESnext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
 		"types": [
