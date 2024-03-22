@@ -4,18 +4,12 @@
 		"declaration": true,
 		"sourceMap": true,
 		"skipLibCheck": true,
-		"rootDirs": [
-			"src"
-		],
-		"lib": [
-			"es2022"
-		],
+		"rootDirs": ["src"],
+		"lib": ["es2022"],
 		"target": "es2022",
 		"module": "ESnext",
 		"moduleResolution": "node",
 		"esModuleInterop": true,
-		"types": [
-			"node"
-		]
+		"types": ["node"]
 	}
 }
