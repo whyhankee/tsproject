@@ -8,10 +8,11 @@
 		"start": "node ./dist/index.mjs",
 		"dev": "tsx --watch ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
-		"lint": "eslint --fix \"./**/*.{ts,js}\"",
-		"format:": "prettier --write \"./**/*.{ts,js,json,md}\"",
+		"lint": "eslint \"./**/*.{ts,js}\"",
+		"format": "prettier --write \"./**/*.{ts,js,json,md}\"",
 		"test": "vitest --coverage",
-		"test:ci": "pnpm run lint && pnpm run test --run"
+		"test:ci": "pnpm run lint && pnpm run test --run",
+		"prepare": "husky"
 	},
 	"packageManager": "^pnpm@8.14.3",
 	"devDependencies": {
@@ -24,6 +25,7 @@
 		"eslint": "8.56.0",
 		"eslint-config-prettier": "9.1.0",
 		"eslint-plugin-simple-import-sort": "10.0.0",
+		"husky": "9.0.11",
 		"install": "0.13.0",
 		"prettier": "3.2.5",
 		"tsx": "4.7.1",

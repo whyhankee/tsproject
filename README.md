@@ -8,7 +8,9 @@ Basic components
 
 - Using esm instead of commonjs
 - pnpm as package manager
-- Eslint for linting and formatting
+- Eslint for linting
+- prettier for formatting
 - EditorConfig for editor configuration
+- Husky as pre-commit hook
 - Vitest for testing
 - ESBuild for building
