@@ -9,7 +9,7 @@
 		"dev": "tsx --watch ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
 		"lint": "eslint \"./**/*.{ts,js}\"",
-		"format": "prettier --write \"./**/*.{ts,js,json,md}\"",
+		"format": "prettier --write \"./**/*.{ts,js,cjs,json,md}\"",
 		"test": "vitest --coverage",
 		"test:ci": "pnpm run lint && pnpm run test --run",
 		"prepare": "husky"

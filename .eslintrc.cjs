@@ -4,7 +4,11 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+	extends: [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier",
+	],
 	overrides: [
 		{
 			env: {
@@ -22,10 +26,7 @@ module.exports = {
 		sourceType: "module",
 	},
 	plugins: ["@typescript-eslint", "simple-import-sort", "@stylistic"],
-	ignorePatterns: [
-		"coverage/**",
-		"dist/**"
-	],
+	ignorePatterns: ["coverage/**", "dist/**"],
 	rules: {
 		"@stylistic/semi": ["error", "always"],
 		"@stylistic/indent": ["error", "tab"],
@@ -40,9 +41,10 @@ module.exports = {
 		],
 		"no-unused-vars": ["error"],
 		"no-console": [
-			"error", {
-				allow: ["info", "warn", "error"]
-			}
+			"error",
+			{
+				allow: ["info", "warn", "error"],
+			},
 		],
 		"require-await": "error",
 		"simple-import-sort/exports": "error",
