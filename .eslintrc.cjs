@@ -4,11 +4,7 @@ module.exports = {
 		browser: true,
 		es2021: true,
 	},
-	extends: [
-		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended",
-		"prettier",
-	],
+	extends: ["eslint:recommended", "prettier"],
 	overrides: [
 		{
 			env: {
@@ -24,6 +20,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: "latest",
 		sourceType: "module",
+		project: true,
 	},
 	plugins: ["@typescript-eslint", "simple-import-sort", "@stylistic"],
 	ignorePatterns: ["coverage/**", "dist/**"],
@@ -39,6 +36,15 @@ module.exports = {
 			"double",
 			{ avoidEscape: true, allowTemplateLiterals: false },
 		],
+		"@typescript-eslint/consistent-type-imports": [
+			"error",
+			{
+				prefer: "type-imports",
+				fixStyle: "separate-type-imports",
+			},
+		],
+		"@typescript-eslint/no-unsafe-argument": "warn",
+		"@typescript-eslint/no-unsafe-assignment": "warn",
 		"no-unused-vars": ["error"],
 		"no-console": [
 			"error",
