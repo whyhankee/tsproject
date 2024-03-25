@@ -32,6 +32,15 @@ module.exports = {
 		"@stylistic/no-trailing-spaces": ["error"],
 		"@stylistic/linebreak-style": ["error", "unix"],
 		"@stylistic/object-curly-spacing": ["error", "always"],
+		"object-curly-newline": [
+			"error",
+			{
+				ObjectExpression: "always",
+				ObjectPattern: { multiline: true },
+				ImportDeclaration: "never",
+				ExportDeclaration: { multiline: true, minProperties: 3 },
+			},
+		],
 		"@stylistic/quotes": [
 			"error",
 			"double",
