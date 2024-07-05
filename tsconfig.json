@@ -1,15 +1,18 @@
 {
 	"compilerOptions": {
 		"strict": true,
-		"declaration": true,
-		"sourceMap": true,
-		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+
 		"rootDirs": ["src"],
+		"skipLibCheck": true,
+		"types": ["node"],
+
 		"lib": ["es2022"],
 		"target": "es2022",
 		"module": "ESnext",
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"types": ["node"]
+		"sourceMap": true,
+		"declaration": true
 	}
 }

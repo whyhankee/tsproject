@@ -8,31 +8,26 @@
 		"start": "node ./dist/index.mjs",
 		"dev": "tsx --watch ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
-		"lint": "eslint \"./**/*.{ts,js}\"",
 		"format": "prettier --write \"./**/*.{ts,js,cjs,json,md}\"",
-		"test": "vitest --coverage",
-		"test:ci": "pnpm run lint && pnpm run test --run",
+		"test": "pnpm run '/test:.*/'",
+		"test:lint": "eslint --fix",
+		"test:ci": "vitest --run --coverage",
 		"prepare": "husky"
 	},
 	"engines": {
-		"node": "pnpm>=9.4"
+		"node": ">=20.12.0",
+		"pnpm": ">=9.4"
 	},
 	"devDependencies": {
-		"@stylistic/eslint-plugin": "1.5.4",
-		"@types/node": "20.11.7",
-		"@typescript-eslint/eslint-plugin": "6.19.1",
-		"@typescript-eslint/parser": "6.19.1",
-		"@vitest/coverage-v8": "1.2.2",
-		"esbuild": "0.19.12",
-		"eslint": "8.56.0",
-		"eslint-config-prettier": "9.1.0",
-		"eslint-plugin-simple-import-sort": "10.0.0",
+		"@types/node": "20.14.9",
+		"@vitest/coverage-v8": "1.6.0",
+		"esbuild": "0.23.0",
 		"husky": "9.0.11",
 		"install": "0.13.0",
-		"prettier": "3.2.5",
-		"tsx": "4.7.1",
-		"typescript": "5.3.3",
-		"vitest": "1.6.0"
+		"tsx": "4.16.2",
+		"typescript": "^5.5.3",
+		"vitest": "1.6.0",
+		"wescfg": "0.0.1"
 	},
 	"keywords": [
 		"starter",
