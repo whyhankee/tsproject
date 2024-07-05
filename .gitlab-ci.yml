@@ -11,4 +11,4 @@ unittest:
   script:
     - npm install -g pnpm
     - pnpm install
-    - pnpm test:ci
+    - pnpm test
