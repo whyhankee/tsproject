@@ -1,9 +1,13 @@
-// eslint.config.mjs
-import {eslintConfig} from "wescfg"
+import {eslintConfig, globals} from "wescfg"
 
 export default [
 	{
-		files: ["./src/**/*.{ts}"],
+		files: ["**/*.{js,mjs,ts}"],
+		languageOptions: {
+			globals: {
+				...globals.node,
+			},
+		},
 	},
 	...eslintConfig,
 ]
