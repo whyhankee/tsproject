@@ -8,10 +8,10 @@
 		"start": "node ./dist/index.mjs",
 		"dev": "tsx --watch ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
-		"format": "prettier --write \"./**/*.{ts,js,cjs,json,md}\"",
 		"test": "pnpm run '/test:.*/'",
 		"test:lint": "eslint --fix",
 		"test:ci": "vitest --run --coverage",
+		"test:format": "prettier --write .",
 		"prepare": "husky"
 	},
 	"engines": {
@@ -27,7 +27,7 @@
 		"tsx": "4.16.2",
 		"typescript": "^5.5.3",
 		"vitest": "1.6.0",
-		"wescfg": "0.0.1"
+		"wescfg": "0.0.7"
 	},
 	"keywords": [
 		"starter",
