@@ -18,6 +18,7 @@
 		"node": ">=20.12.0",
 		"pnpm": ">=9.4"
 	},
+	"packageManager": "pnpm@9.4.0",
 	"devDependencies": {
 		"@types/node": "20.14.9",
 		"@vitest/coverage-v8": "1.6.0",
@@ -30,8 +31,10 @@
 		"wescfg": "0.0.7"
 	},
 	"keywords": [
+		"typescript",
 		"starter",
-		"typescript"
+		"bootstrap",
+		"project"
 	],
 	"author": "Paul Wijhenke <paul@paulsplace.nl>",
 	"license": "ISC"
