@@ -21,8 +21,8 @@ importers:
         specifier: ^9.1.4
         version: 9.1.4
       tsx:
-        specifier: ^4.16.5
-        version: 4.16.5
+        specifier: ^4.17.0
+        version: 4.17.0
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -30,8 +30,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@20.14.14)
       wescfg:
-        specifier: ^0.0.11
-        version: 0.0.11(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.4)
+        specifier: ^0.0.12
+        version: 0.0.12(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.4)
 
 packages:
 
@@ -359,8 +359,8 @@ packages:
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@eslint/js@9.6.0':
-    resolution: {integrity: sha512-D9B0/3vNg44ZeWbYMpBoXqNP4j6eQD5vNwIlGAuFRRzK/WtT/jvDQW3Bi9kkf3PMDMlM7Yi+73VLUsn5bJcl8A==}
+  '@eslint/js@9.8.0':
+    resolution: {integrity: sha512-MfluB7EUfxXtv3i/++oh89uzAr4PDI4nn201hsp+qaXqsjAWzinlZEHEfPgAX4doIlKvPG/i0A9dpKxOLII8yA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@humanwhocodes/config-array@0.11.14':
@@ -850,8 +850,8 @@ packages:
     resolution: {integrity: sha512-AhO5QUcj8llrbG09iWhPU2B204J1xnPeL8kQmVorSsy+Sjj1sk8gIyh6cUocGmH4L0UuhAJy+hJMRA4mgA4mFQ==}
     engines: {node: '>=8'}
 
-  globals@15.8.0:
-    resolution: {integrity: sha512-VZAJ4cewHTExBWDHR6yptdIBlx9YSSZuwojj9Nt5mBRXQzrKakDsVKQ1J63sklLvzAJm0X5+RpO4i3Y2hcOnFw==}
+  globals@15.9.0:
+    resolution: {integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==}
     engines: {node: '>=18'}
 
   globby@11.1.0:
@@ -1232,8 +1232,8 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  tsx@4.16.5:
-    resolution: {integrity: sha512-ArsiAQHEW2iGaqZ8fTA1nX0a+lN5mNTyuGRRO6OW3H/Yno1y9/t1f9YOI1Cfoqz63VAthn++ZYcbDP7jPflc+A==}
+  tsx@4.17.0:
+    resolution: {integrity: sha512-eN4mnDA5UMKDt4YZixo9tBioibaMBpoxBkD+rIPAjVmYERSG0/dWEY1CEFuV89CgASlKL499q8AhmkMnnjtOJg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -1324,8 +1324,8 @@ packages:
       jsdom:
         optional: true
 
-  wescfg@0.0.11:
-    resolution: {integrity: sha512-moaHZifIvJc4Q63jwOldafJxCq16jNgERiavdIvIyYJCIQnbC5JV2akch2BQLCEuA9pzcqjMLa1RNaD3SAPwWQ==}
+  wescfg@0.0.12:
+    resolution: {integrity: sha512-MQBYrB8ejKotlUi1YySSCtGQ7L+zD+OqswBIk5cbj7aBMigBtvgo5wWb+2xk20l4l/DQHfD2zkWd47naKZ/n4A==}
     engines: {node: '>=18.20.3', pnpm: '>=9.4'}
     hasBin: true
     peerDependencies:
@@ -1548,7 +1548,7 @@ snapshots:
 
   '@eslint/js@8.57.0': {}
 
-  '@eslint/js@9.6.0': {}
+  '@eslint/js@9.8.0': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
@@ -2126,7 +2126,7 @@ snapshots:
     dependencies:
       type-fest: 0.20.2
 
-  globals@15.8.0: {}
+  globals@15.9.0: {}
 
   globby@11.1.0:
     dependencies:
@@ -2460,9 +2460,9 @@ snapshots:
     dependencies:
       typescript: 5.5.4
 
-  tsx@4.16.5:
+  tsx@4.17.0:
     dependencies:
-      esbuild: 0.21.5
+      esbuild: 0.23.0
       get-tsconfig: 4.7.5
     optionalDependencies:
       fsevents: 2.3.3
@@ -2550,13 +2550,13 @@ snapshots:
       - supports-color
       - terser
 
-  wescfg@0.0.11(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.4):
+  wescfg@0.0.12(eslint@8.57.0)(prettier@3.3.2)(typescript@5.5.4):
     dependencies:
-      '@eslint/js': 9.6.0
+      '@eslint/js': 9.8.0
       eslint: 8.57.0
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
       eslint-plugin-simple-import-sort: 12.1.1(eslint@8.57.0)
-      globals: 15.8.0
+      globals: 15.9.0
       prettier: 3.3.2
       typescript-eslint: 7.15.0(eslint@8.57.0)(typescript@5.5.4)
     transitivePeerDependencies:
