@@ -27,7 +27,7 @@
 		"tsx": "^4.17.0",
 		"typescript": "^5.5.4",
 		"vitest": "^2.0.5",
-		"wescfg": "0.0.17"
+		"wescfg": "^0.0.17"
 	},
 	"keywords": [
 		"typescript",

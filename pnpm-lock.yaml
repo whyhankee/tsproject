@@ -30,7 +30,7 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5(@types/node@20.14.14)
       wescfg:
-        specifier: 0.0.17
+        specifier: ^0.0.17
         version: 0.0.17(eslint@9.14.0)(prettier@3.3.3)(typescript@5.5.4)
 
 packages:
