@@ -20,13 +20,13 @@
 	},
 	"packageManager": "pnpm@9.4.0",
 	"devDependencies": {
-		"@types/node": "^20.14.14",
-		"@vitest/coverage-v8": "^2.0.5",
-		"esbuild": "^0.23.0",
-		"husky": "^9.1.4",
-		"tsx": "^4.17.0",
-		"typescript": "^5.5.4",
-		"vitest": "^2.0.5",
+		"@types/node": "^20.17.9",
+		"@vitest/coverage-v8": "^2.1.8",
+		"esbuild": "^0.24.0",
+		"husky": "^9.1.7",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2",
+		"vitest": "^2.1.8",
 		"wescfg": "^0.0.17"
 	},
 	"keywords": [
