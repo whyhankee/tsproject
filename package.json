@@ -20,14 +20,14 @@
 	},
 	"packageManager": "pnpm@9.4.0",
 	"devDependencies": {
-		"@types/node": "^20.17.9",
-		"@vitest/coverage-v8": "^2.1.8",
-		"esbuild": "^0.24.0",
+		"@types/node": "<22.0.0",
+		"@vitest/coverage-v8": "^3.0.8",
+		"esbuild": "^0.25.1",
 		"husky": "^9.1.7",
-		"tsx": "^4.19.2",
-		"typescript": "^5.7.2",
-		"vitest": "^2.1.8",
-		"wescfg": "^0.0.17"
+		"tsx": "^4.19.3",
+		"typescript": "^5.8.2",
+		"vitest": "^3.0.8",
+		"wescfg": "^0.0.18"
 	},
 	"keywords": [
 		"typescript",
