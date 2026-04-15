@@ -3,15 +3,15 @@
 	"description": "Typescript starter project",
 	"version": "0.0.1",
 	"type": "module",
-	"main": "dist/index.mjs",
+	"main": "dist/index.js",
 	"scripts": {
-		"start": "node ./dist/index.mjs",
+		"start": "node ./dist/index.js",
 		"dev": "tsx --watch ./src/index.ts",
-		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
+		"build": "tsup src/index.ts --format esm --target node20 --clean",
 		"test": "pnpm run '/test:.*/'",
-		"test:lint": "eslint . --fix",
+		"test:lint": "./node_modules/.bin/eslint . --fix",
 		"test:ci": "vitest --run --coverage",
-		"test:format": "prettier --write .",
+		"test:format": "./node_modules/.bin/prettier --write .",
 		"prepare": "husky"
 	},
 	"engines": {
@@ -22,8 +22,8 @@
 	"devDependencies": {
 		"@types/node": "^24.10.0",
 		"@vitest/coverage-v8": "4.1.4",
-		"esbuild": "0.28.0",
 		"husky": "9.1.7",
+		"tsup": "8.5.1",
 		"tsx": "4.21.0",
 		"typescript": "6.0.2",
 		"vitest": "4.1.4",

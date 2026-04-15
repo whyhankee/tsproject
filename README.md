@@ -12,4 +12,4 @@ Basic components
 - [wescfg](https://github.com/whyhankee/wescfg) for ESLint/Prettier config
 - Husky as pre-commit hook
 - Vitest for testing
-- ESBuild for building
+- tsup for building
