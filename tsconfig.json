@@ -3,15 +3,14 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"esModuleInterop": true,
-		"moduleResolution": "node",
-
+		"moduleResolution": "node16",
 		"rootDirs": ["src"],
 		"skipLibCheck": true,
 		"types": ["node"],
 
 		"lib": ["es2022"],
 		"target": "es2022",
-		"module": "ESnext",
+		"module": "node16",
 		"sourceMap": true,
 		"declaration": true
 	}
