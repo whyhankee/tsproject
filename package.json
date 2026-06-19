@@ -8,10 +8,9 @@
 		"start": "node ./dist/index.mjs",
 		"dev": "tsx --watch ./src/index.ts",
 		"build": "esbuild ./src/index.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/index.mjs",
-		"test": "pnpm run '/test:.*/'",
-		"test:lint": "eslint . --fix",
+		"test": "eslint . --fix && prettier --write . && vitest --run",
 		"test:ci": "vitest --run --coverage",
-		"test:format": "prettier --write .",
+		"test:precommit": "eslint . && prettier --check . && pnpm test:ci",
 		"prepare": "husky"
 	},
 	"engines": {

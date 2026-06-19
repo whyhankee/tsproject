@@ -1,5 +1,6 @@
 coverage/
 dist/
+.claude/
 
 pnpm-lock.yaml
 package-lock.json
